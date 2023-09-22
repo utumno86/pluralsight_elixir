@@ -1,5 +1,7 @@
 defmodule ModulePlayground do
+  import IO, only: [puts: 1]
+
   def say_here do
-    IO.puts "Here"
+    puts "I'm Here"
   end
 end
