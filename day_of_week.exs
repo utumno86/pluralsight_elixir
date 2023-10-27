@@ -11,4 +11,15 @@ defmodule Sample.Calendar do
       true -> "Invalid Day"
     end
   end
+
+  def describe_date(date) do
+    case date do
+      {1, _, _} -> "Brand new month!"
+      {25, 12, _} -> "Merry Christmas"
+      {25, month, _} -> "Only #{12 - month} months until Christmas"
+      {31, 10, 1517} -> "The reformation is starting!"
+      {31,10, _} -> "Happy Halloween"
+      {_ , _ , _} -> "Just an average day"
+    end
+  end
 end
