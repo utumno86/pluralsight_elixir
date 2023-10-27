@@ -8,6 +8,7 @@ defmodule Sample.Calendar do
       day == :Friday -> "F"
       day == :Saturday -> "Sa"
       day == :Sunday -> "Su"
+      true -> "Invalid Day"
     end
   end
 end
